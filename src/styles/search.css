@@ -1,0 +1,20 @@
+.t1-funcionarios {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.text-input-search {
+  position: absolute;
+  width: 250px;
+  height: 38px;
+  left: 698px;
+  top: 90px;
+  display: block;
+  position: relative;
+
+  border: 1px solid #CDCDCD;
+}
+
+::placeholder {
+  color: #c8c8c8;
+}

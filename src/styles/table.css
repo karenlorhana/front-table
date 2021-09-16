@@ -1,0 +1,37 @@
+table,
+th,
+td {
+  text-align: center;
+  position: relative;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #ffffff;
+}
+
+th,
+td {
+  width: 150px;
+}
+
+table {
+  margin: auto;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dcdcdc;
+  top: 200px;
+  height: 20px;
+}
+
+td {
+  font-size: 15px;
+}
+
+th {
+  height: 50px;
+  background-color: #5984bd;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.table-header-color {
+  background-color: #5984bd;
+}
