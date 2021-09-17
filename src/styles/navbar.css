@@ -1,10 +1,14 @@
 .navbar {
   background-color: #1c1c1c;
-  color: #ffffff;
   position: relative;
   width: 1024px;
   max-width: 1440px;
   height: 65px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
 
+.be-mobile-logo {
+  position: absolute;
+  left: 120px;
+  top: 15px;
 }

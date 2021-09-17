@@ -16,12 +16,12 @@ table {
   margin: auto;
   background-color: #ffffff;
   border-bottom: 1px solid #dcdcdc;
-  top: 150px;
+  top: 120px;
   height: 20px;
 }
 
 td {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 th {
@@ -36,13 +36,20 @@ th {
   background-color: #5984bd;
 }
 
-.tb-container .t1-funcionarios {
+.t1-funcionarios {
   position: absolute;
   width: 145px;
   height: 30px;
   left: 125px;
-  top: 130px;
+  top: 95px;
   font-weight: 500;
   font-size: 24px;
   color: #1c1c1c;
+}
+
+.employee-icon-profile {
+  margin-top: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 22px;
 }

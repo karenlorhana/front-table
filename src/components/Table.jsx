@@ -4,7 +4,6 @@ import image from '../data/server.json'
 
 function Table() {
   const [dados, setDados] = useState([])
-  console.log(image)
 
   useEffect(() => {
     fetch('http://localhost:8000/employess')
@@ -31,12 +30,18 @@ function Table() {
         <div key={dado.id}>
           <table>
             <tr>
-              <td>{dado.image}</td>
+              <td>
+                <img
+                  className='employee-icon-profile'
+                  src={dado.image}
+                  alt=''
+                />
+              </td>
               <td>{dado.name}</td>
 
               <td>{dado.job}</td>
 
-              <td>{dado.admission_date.substring(0, 10)}</td>
+              <td>{dado.admission_date}</td>
 
               <td>{dado.phone}</td>
             </tr>
