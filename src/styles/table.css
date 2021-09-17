@@ -16,7 +16,7 @@ table {
   margin: auto;
   background-color: #ffffff;
   border-bottom: 1px solid #dcdcdc;
-  top: 200px;
+  top: 150px;
   height: 20px;
 }
 
@@ -34,4 +34,15 @@ th {
 
 .table-header-color {
   background-color: #5984bd;
+}
+
+.tb-container .t1-funcionarios {
+  position: absolute;
+  width: 145px;
+  height: 30px;
+  left: 125px;
+  top: 130px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #1c1c1c;
 }

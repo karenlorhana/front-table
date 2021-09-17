@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import image from '../data/server.json'
+
 
 function Table() {
   const [dados, setDados] = useState([])
+  console.log(image)
 
   useEffect(() => {
     fetch('http://localhost:8000/employess')
@@ -10,7 +13,8 @@ function Table() {
   }, [])
 
   return (
-    <div>
+    <div className='tb-container'>
+      <h4 className='t1-funcionarios'>Funcionários</h4>
       <span>
         <table className='table-header-color'>
           <tr>
@@ -27,7 +31,7 @@ function Table() {
         <div key={dado.id}>
           <table>
             <tr>
-              <td>foto{/* {dado.image} */}</td>
+              <td>{dado.image}</td>
               <td>{dado.name}</td>
 
               <td>{dado.job}</td>
