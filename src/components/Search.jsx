@@ -1,40 +1,33 @@
-import React from 'react'
-import { useState } from 'react'
-import server from '../data/server.json'
-import SearchIcon from '@material-ui/icons/Search'
+import React, { useState } from 'react'
+
+import { employess } from '../data/server.json'
 
 function Search() {
-  const [search, setSearch] = useState('')
+  const [state, setState] = useState(employess)
 
-  // const searchSpace = (event) => {
-  //   let keyword = event.target.value
-  //   this.setState({ search: keyword })
-  // }
+  const handleSearch = (event) => {
+    const value = event.target.value.toLowerCase()
 
-  // const filteredName = server
-  //   .filter((data) => {
-  //     if (search === '') {
-  //       return data
-  //     } else if (data.nome.toLoweCase().includes(search.toLowerCase())) {
-  //       return data
-  //     }
-  //   })
-  //   .map((data, key) => {
-  //     return (
-  //       <div className='user' key={key}>
-  //         <span>{data.name}</span>
-  //       </div>
-  //     )
-  //   })
+    const result = employess.filter((d) => {
+      return d.name.toLowerCase().includes(value)
+    })
+
+    setState([...result])
+  }
 
   return (
     <div>
+      {state.map((val) => {
+        return <p className='employee-fetched-name'>{val.name}</p>
+      })}
       <input
         className='text-input-search'
-        type='search'
+        type='text'
         placeholder='Pesquisar'
-        endIcon={<SearchIcon />}
-      />{' '}
+        onChange={(event) => {
+          handleSearch(event)
+        }}
+      />
     </div>
   )
 }
