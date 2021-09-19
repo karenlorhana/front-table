@@ -6,13 +6,13 @@ onde pode ser realizado uma pesquisa.
 
 # Getting Started
 
-- Para rodar esse projeto, você deve executar:
+Para rodar esse projeto, você deve executar:
 
 ### `npm start`
 
 Abra [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
 
-- Para rodar a API json simulada, você deve executar:
+Para rodar a API json simulada, você deve executar:
 
 ### `npx json-server --watch src/data/server.json --port 8000`
 
